@@ -58,7 +58,7 @@
                 &none       &none       &none       &none       &kp TAB    &kp SQT     &kp COMMA   &kp DOT     &kp P     &kp Y       &kp F       &kp G       &kp C       &kp R       &kp L       &kp FSLH
                 &none       &none       &none       &none       &kp ESC    &kp A       &kp O       &kp U       &kp E     &kp I       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
                 &none       &none       &none       &none       &kp DEL    &kp SEMI    &kp Q       &kp J       &kp K     &kp X       &kp B       &kp M       &kp W       &kp V       &kp Z       &kp BSPC
-                &none       &none       &none       &none       &kp LCTL   &none       &kp LGUI    &LALT       &mo LOWER &kp LSHFT   &kp SPACE   &mo RAISE   &kp RALT    &kp RGUI    &none       &kp RET
+                &none       &none       &none       &none       &kp LCTL   &none       &kp LGUI    &kp LALT    &mo LOWER &kp LSHFT   &kp SPACE   &mo RAISE   &kp RALT    &kp RGUI    &none       &kp RET
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -90,7 +90,7 @@
                 &trans      &trans      &trans      &trans      &bootloader &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4    &none       &none       &none       &none       &bt BT_CLR  &none
                 &trans      &trans      &trans      &trans      &reset      &rgb_ug RGB_TOG  &rgb_ug RSTCLR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI   &none           &none       &kp F9      &kp F10     &kp F11     &kp F12     &none
                 &trans      &trans      &trans      &trans      &none       &rgb_ug RGB_HUD  &rgb_ug RGB_HUI &rgb_ug RGB_SAD  &rgb_ug RGB_SAI   &none           &none       &kp F5      &kp F6      &kp F7      &kp F8      &none
-                &trans      &trans      &trans      &trans      &none       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI &rgb_ug RGB_EFR  &rgb_ug RGB_EFF   &none           &none       &kp F1      &kp F2      &kp F3      &kp F4      &none
+                &trans      &trans      &trans      &trans      &none       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI &rgb_ug RGB_EFR  &rgb_ug RGB_EFF   &none           &none       &kp F1      &kp F2      &kp F3      &kp F4
                 &trans      &trans      &trans      &trans      &none       &trans           &trans          &trans           &trans            &trans          &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
