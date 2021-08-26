@@ -97,11 +97,11 @@
 
         game_layer {
             bindings = <
-                &none       &none       &none       &none       &to DEFAULT &kp N1      &kp N2      &kp N3      &kp N4    &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp C_MUTE
-                &none       &none       &none       &none       &kp TAB     &kp Q       &kp W       &kp E       &kp R     &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp FSLH
-                &none       &none       &none       &none       &kp ESC     &kp A       &kp S       &kp D       &kp F     &kp G       &kp H       &kp J       &kp K       &kp L       &kp SCLN    &kp MINUS
-                &none       &none       &none       &none       &kp DEl     &kp Z       &kp X       &kp C       &kp V     &kp B       &kp N       &kp M       &kp CMMA    &kp DOT     &kp FSLH    &kp BSPC
-                &none       &none       &none       &none       &kp LCTL    &none       &kp LGUI    &kp LALT    &mo LOWER &kp LSHFT   &kp SPC     &mo RAISE   &kp RALT    &kp RGUI    &none       &kp RET
+                &none       &none       &none       &none       &to DEFAULT &kp N1      &kp N2      &kp N3      &kp N4    &kp N5      &none       &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &kp TAB     &kp Q       &kp W       &kp E       &kp R     &kp T       &none       &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &kp LCTL    &kp A       &kp S       &kp D       &kp F     &kp G       &none       &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B       &none       &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &kp LALT    &none       &kp RALT    &kp RCTL    &kp SPACE &none       &none       &none       &none       &none       &none       &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
