@@ -56,7 +56,7 @@
             bindings = <
                 &none       &none       &none       &none       &to GAME   &kp ENGTOG  &kp IMETOG  &kp ROMTOG  &none     &none       &none       &none       &none       &none       &none       &kp C_MUTE
                 &none       &none       &none       &none       &kp TAB    &kp SQT     &kp COMMA   &kp DOT     &kp P     &kp Y       &kp F       &kp G       &kp C       &kp R       &kp L       &kp FSLH
-                &none       &none       &none       &none       &kp ESC    &kp A       &kp O       &kp U       &kp E     &kp I       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
+                &none       &none       &none       &none       &kp ESC    &kp A       &kp O       &kp E       &kp U     &kp I       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
                 &none       &none       &none       &none       &kp DEL    &kp SEMI    &kp Q       &kp J       &kp K     &kp X       &kp B       &kp M       &kp W       &kp V       &kp Z       &kp BSPC
                 &none       &none       &none       &none       &kp LCTL   &none       &kp LGUI    &kp LALT    &mo LOWER &kp LSHFT   &kp SPACE   &mo RAISE   &kp RALT    &kp RGUI    &none       &kp RET
             >;
