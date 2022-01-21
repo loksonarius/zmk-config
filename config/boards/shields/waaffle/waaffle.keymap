@@ -71,7 +71,7 @@
                 &trans      &trans      &trans      &trans      &none       &kp AMTLL   &kp AMTLW   &kp AMBSP   &kp AMALL   &none       &none       &kp WKSPL   &kp WKSPD   &kp WKSPU   &kp WKSPR   &none
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &mo ADJUST  &trans      &trans      &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
         };
 
         raise_layer {
