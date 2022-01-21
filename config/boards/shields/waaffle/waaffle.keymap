@@ -54,7 +54,7 @@
 
         default_layer {
             bindings = <
-                &none       &none       &none       &none       &to GAME   &kp ENGTOG  &kp IMETOG  &kp ROMTOG  &none     &none       &none       &none       &none       &none       &none       &kp C_MUTE
+                &none       &none       &none       &none       &to GAME   &kp ENGTOG  &kp IMETOG  &kp ROMTOG  &none     &none       &none       &none       &none       &none       &none       &kp C_PP
                 &none       &none       &none       &none       &kp TAB    &kp SQT     &kp COMMA   &kp DOT     &kp P     &kp Y       &kp F       &kp G       &kp C       &kp R       &kp L       &kp FSLH
                 &none       &none       &none       &none       &kp ESC    &kp A       &kp O       &kp E       &kp U     &kp I       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
                 &none       &none       &none       &none       &kp DEL    &kp SEMI    &kp Q       &kp J       &kp K     &kp X       &kp B       &kp M       &kp W       &kp V       &kp Z       &kp BSPC
@@ -65,13 +65,13 @@
 
         lower_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &kp C_PP
+                &trans      &trans      &trans      &trans      &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
                 &trans      &trans      &trans      &trans      &none       &kp AMCYC   &kp AMSHR   &kp AMGRW   &kp AMREL   &none       &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &none
                 &trans      &trans      &trans      &trans      &none       &kp AMLFT   &kp AMCCW   &kp AMCW    &kp AMRGH   &none       &none       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
                 &trans      &trans      &trans      &trans      &none       &kp AMTLL   &kp AMTLW   &kp AMBSP   &kp AMALL   &none       &none       &kp WKSPL   &kp WKSPD   &kp WKSPU   &kp WKSPR   &none
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &mo ADJUST  &trans      &trans      &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN C_SCROLL_UP>;
         };
 
         raise_layer {
