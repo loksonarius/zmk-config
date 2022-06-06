@@ -38,7 +38,7 @@
 #define WKSPU  LA(LC(UP))
 #define WKSPR  LA(LC(RIGHT))
 
-#define QUAKE LC(GRAV)
+#define QUAKE LG(GRAV)
 
 #define RSTCLR RGB_COLOR_HSB(0,100,100)
 
