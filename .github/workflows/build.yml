@@ -51,7 +51,7 @@ jobs:
 
       # Clear build directory
       - name: delete compilation residue
-        run:  rm -rf build/*
+        run:  rm -rf build/zephyr/*
 
       # Waaffle rev3 with nice_nano v1
       - name: West Build (waaffle_rev3)
