@@ -53,6 +53,13 @@ jobs:
       - name: delete compilation residue
         run:  rm -rf build/*
 
+      - name: West Init
+        run: west init -l config
+      - name: West Update
+        run: west update
+      - name: West Zephyr export
+        run: west zephyr-export
+
       # Waaffle rev3 with nice_nano v1
       - name: West Build (waaffle_rev3)
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=waaffle_rev3 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
