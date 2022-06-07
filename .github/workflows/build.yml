@@ -53,8 +53,6 @@ jobs:
       - name: delete compilation residue
         run:  rm -rf build/*
 
-      - name: West Init
-        run: west init -l config
       - name: West Update
         run: west update
       - name: West Zephyr export
