@@ -16,10 +16,6 @@
 #define ADJUST  3
 #define GAME    4
 
-#define ENGTOG LC(LS(N1))
-#define IMETOG LC(LS(N2))
-#define ROMTOG LA(GRAV)
-
 #define AMCYC  LA(LS(SPACE))
 #define AMSHR  LA(LS(DOT))
 #define AMGRW  LA(LS(COMMA))
@@ -40,6 +36,8 @@
 
 #define QUAKE LG(GRAV)
 
+#define ALT_RET RALT RET
+
 #define RSTCLR RGB_COLOR_HSB(0,100,100)
 
 #define BT0  BT_SEL 0
@@ -54,11 +52,11 @@
 
         default_layer {
             bindings = <
-                &none       &none       &none       &none       &to GAME   &kp ENGTOG  &kp IMETOG  &kp ROMTOG  &none     &none       &none       &none       &none       &none       &none       &kp C_PP
+                &none       &none       &none       &none       &none      &none       &none       &none       &none     &none       &none       &none       &none       &none       &none       &kp C_PP
                 &none       &none       &none       &none       &kp TAB    &kp SQT     &kp COMMA   &kp DOT     &kp P     &kp Y       &kp F       &kp G       &kp C       &kp R       &kp L       &kp FSLH
                 &none       &none       &none       &none       &kp ESC    &kp A       &kp O       &kp E       &kp U     &kp I       &kp D       &kp H       &kp T       &kp N       &kp S       &kp MINUS
                 &none       &none       &none       &none       &kp DEL    &kp SEMI    &kp Q       &kp J       &kp K     &kp X       &kp B       &kp M       &kp W       &kp V       &kp Z       &kp BSPC
-                &none       &none       &none       &none       &kp LCTL   &none       &kp LGUI    &kp LALT    &mo LOWER &kp LSHFT   &kp SPACE   &mo RAISE   &kp RALT    &kp RGUI    &none       &kp RET
+                &none       &none       &none       &none       &kp LCTL   &none       &kp LGUI    &kp LALT    &mo LOWER &kp LSHFT   &kp SPACE   &mo RAISE   &mt ALT_RET &kp RGUI    &to GAME    &kp RET
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -97,11 +95,11 @@
 
         game_layer {
             bindings = <
-                &none       &none       &none       &none       &to DEFAULT &kp N1      &kp N2      &kp N3      &kp N4    &kp N5      &none       &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &kp TAB     &kp Q       &kp W       &kp E       &kp R     &kp T       &none       &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &kp LCTL    &kp A       &kp S       &kp D       &kp F     &kp G       &none       &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B       &none       &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &kp LALT    &none       &kp RALT    &kp RCTL    &kp SPACE &none       &none       &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4    &kp N5      &kp N6      &kp N7      &kp N8      &kp 9       &kp 0       &none
+                &none       &none       &none       &none       &kp TAB     &kp Q       &kp W       &kp E       &kp R     &kp T       &kp Y       &kp U       &none       &kp UP      &none       &none
+                &none       &none       &none       &none       &kp LCTL    &kp A       &kp S       &kp D       &kp F     &kp G       &kp H       &kp J       &kp LEFT    &kp DOWN    &kp RIGHT   &none
+                &none       &none       &none       &none       &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B       &kp N       &kp M       &none       &none       &none       &none
+                &none       &none       &none       &none       &kp LALT    &none       &kp RALT    &kp RCTL    &kp SPACE &none       &none       &none       &none       &none       &to DEFAULT &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
