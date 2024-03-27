@@ -7,8 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      # image: zmkfirmware/zmk-build-arm:stable
-      image: zmkfirmware/zmk-build-arm:3.0-branch
+      image: zmkfirmware/zmk-build-arm:stable
     name: Build
     steps:
       - name: Checkout
@@ -32,8 +31,8 @@ jobs:
 
       - name: West Init
         run: west init -l config
-      # - name: West Update
-      #   run: west update
+      - name: West Update
+        run: west update
       - name: West Zephyr export
         run: west zephyr-export
 
